@@ -7,15 +7,6 @@ import axios from '../../services/axios'
 
 export default function Login() {
 
-  useEffect(()=> {
-    async function getData(){
-      const response = await axios.get('/alunos')
-      const { data } = response;
-        console.log(data)
-    }
-
-    getData()
-  }, [])
   return (
     <>
     <Container>
